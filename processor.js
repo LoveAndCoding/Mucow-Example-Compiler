@@ -46,7 +46,7 @@ Q.nfcall(fs.readFile, program.args[0], 'utf-8')
 				comments.push({
 					text: commentText,
 					// Render as markdown
-					rendered: commentText.match(/^\s*!\s*$/) ? '' : marked(commentText, {
+					rendered: commentText.match(/^\s*!\s*$/) ? '' : marked(commentText.replace(/^\t+/gm,''), {
 						gfm: true,
 						tables: true,
 						sanitize: true,
