@@ -1,0 +1,19 @@
+{
+  "name": "MuCOW-Example-Processor",
+  "version": "0.1.0",
+  "description": "Processes the example MuCOW files and turns them into their HTML counterparts",
+  "main": "processor.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Andrew Hushbeck",
+  "license": "MIT",
+  "dependencies": {
+    "sax": "~1.1.1",
+    "highlight.js": "~8.6.0",
+    "commander": "~2.8.1",
+    "q": "~1.4.1",
+    "marked": "~0.3.3",
+    "ejs": "~2.3.1"
+  }
+}
